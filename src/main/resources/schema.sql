@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS teacher_course(
     course_id INT,
     CONSTRAINT PRIMARY KEY (teacher_id,course_id),
     CONSTRAINT fk_1 FOREIGN KEY (teacher_id) REFERENCES  teacher(id),
-    CONSTRAINT fk_2 FOREIGN KEY  (course_id) REFERENCES course(id) ON DELETE CASCADE
+    CONSTRAINT fk_2 FOREIGN KEY  (course_id) REFERENCES courses(id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS courses(
